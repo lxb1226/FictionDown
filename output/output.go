@@ -10,9 +10,9 @@ import (
 func init() {
 	formatMap = make(map[string][]Conversion)
 	RegOutputFormat("md", &Markdown{})
-	RegOutputFormat("epub", &PandocEPUB{})
+	// RegOutputFormat("epub", &PandocEPUB{})
 	RegOutputFormat("txt", &TXT{})
-	// RegOutputFormat("epub", &EPUB{})
+	RegOutputFormat("epub", &EPUB{})
 }
 
 // Option is Convert output options
